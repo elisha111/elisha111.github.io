@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <input type="text" placeholder="0" id="rez" value="">
+        <div class="btn" id="backspace">←</div>
+        <div id="rez_btn"> = </div>
+
+        <div class="btn" id="in_1">1</div>
+        <div class="btn" id="in_2">2</div>
+        <div class="btn" id="in_3">3</div>
+        <div class="btn" id="in_plus">+</div>
+
+        <div class="btn" id="in_4">4</div>
+        <div class="btn" id="in_5">5</div>
+        <div class="btn" id="in_6">6</div>
+        <div class="btn" id="in_minus">-</div>
+
+        <div class="btn" id="in_7">7</div>
+        <div class="btn" id="in_8">8</div>
+        <div class="btn" id="in_9">9</div>
+        <div class="btn" id="in_umnozh">*</div>
+
+        <div class="btn" id="clear">C</div>
+        <div class="btn" id="in_0">0</div>
+        <div class="btn" id="in_point">.</div>
+        <div class="btn" id="in_delit">/</div>
+
+        
+    </div>
+    
+    <script>
+
+        let r = 0;
+
+        rez_btn.onclick = function(){
+            rez.value = eval(rez.value);
+        }
+
+        in_1.onclick = function(){
+            r = rez.value;
+            rez.value = r + '1';
+        }
+
+        in_2.onclick = function(){
+            r = rez.value;
+            rez.value = r + '2';
+        }
+
+        in_3.onclick = function(){
+            r = rez.value;
+            rez.value = r + '3';
+        }
+
+        in_4.onclick = function(){
+            r = rez.value;
+            rez.value = r + '4';
+        }
+
+        in_5.onclick = function(){
+            r = rez.value;
+            rez.value = r + '5';
+        }
+
+        in_6.onclick = function(){
+            r = rez.value;
+            rez.value = r + '6';
+        }
+
+        in_7.onclick = function(){
+            r = rez.value;
+            rez.value = r + '7';
+        }
+
+        in_8.onclick = function(){
+            r = rez.value;
+            rez.value = r + '8';
+        }
+
+        in_9.onclick = function(){
+            r = rez.value;
+            rez.value = r + '9';
+        }
+
+        in_0.onclick = function(){
+            r = rez.value;
+            rez.value = r + '0';
+        }
+
+        in_point.onclick = function(){
+            r = rez.value;
+            rez.value = r + '.';
+        }
+
+        in_plus.onclick = function(){
+            r = rez.value;
+            rez.value = r + '+';
+        }
+
+        in_minus.onclick = function(){
+            r = rez.value;
+            rez.value = r + '-';
+        }
+
+        in_umnozh.onclick = function(){
+            r = rez.value;
+            rez.value = r + '*';
+        }
+
+        in_delit.onclick = function(){
+            r = rez.value;
+            rez.value = r + '/';
+        }
+
+        clear.onclick = function(){
+            rez.value = '';
+        }
+
+        backspace.onclick = function(){
+            rez.value = rez.value.slice(0, -1);
+        }
+    </script>
+
+</body>
+</html>

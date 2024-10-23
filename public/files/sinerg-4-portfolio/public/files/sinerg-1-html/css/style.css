@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url("/img/Background.png") no-repeat center center fixed;
+    background-size: cover;
+    background-color: #050729;
+    font-family: "Oswald", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container_wrapper {
+    text-align: center;
+    position: fixed;
+    font-weight: 400;
+    width: 17%;
+    float: left;
+    background-color: #0b0b0da4;
+    height: 100%;
+    color: #fff
+}
+
+.logo_vil {
+    color: #A276FF;
+}
+
+.logo_upppers {
+  
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.wrapper_up {
+    margin: 54px 0px 0px 0px;
+    
+    text-align: center;
+    font-size: 17px;
+}
+
+.wrapper_up li {
+    padding-bottom: 27px;
+    
+}
+
+.wrapper_up a {
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper_down {
+    margin-top: 250px;
+}
+
+.wrapper_down li {
+    padding-bottom: 27px;
+}
+
+.wrapper_down a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.356);
+}
+
+.sidebar_nav {
+   margin-top: 60px;
+   margin-bottom: 60px;
+   color: rgba(255, 255, 255, 0.356);
+}
+
+.maine_wrapper {
+    width: 83%;
+    float: right;
+    color: #fff;
+}
+
+.wrapper_main li a:hover {
+    color: #A276FF;
+}
+
+.wrapper_main li:hover::before {
+    content: url(/img/Marker.svg);
+    position: absolute;
+    left: 0;
+}
+
+.maine_wrapper {
+    padding-top: 130px;
+   
+}
+.cont {
+    margin-left: 200px;
+}
+
+.maine_wrapper h1 {
+   font-size: 46px;
+   width: 600px;
+   line-height: 90px;
+}
+
+.maine_wrapper h1 span {
+    font-size: 90px;
+}
+
+.maine_wrapper p {
+    font-size: 28px;
+    width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* .btn {
+    width: 250px;
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+} */
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 100px;
+    border: 1px solid;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.btn_2 a {
+    text-decoration: none;
+    color: white;
+    transition: all 500ms ease;
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.btn_2 {
+    margin-bottom: 150px;
+}
+
+.btn_2 p {
+    font-size: 16px;
+}
+
+.container-img {
+    width: 100%;
+    height: 300px;
+}
+
+.img_c {
+    width: 15%;
+    float: left;
+    height: 150px;
+    margin-right: 60px;
+    margin-top: 80px;
+}
+
+.img_1 {
+    background-position: center;
+    background-size: cover;
+}
+
+.container-text {
+    width: 100%;
+}
+
+.big-text {
+    background-color: white;
+    width: 80%;
+    margin: 50px auto;
+    margin-left: 0;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.big--text{
+    width: 600px;
+    margin-left: 0;
+    color: #111111;
+    float: left;
+    padding: 50px;
+}
+
+.big--text p {
+    width: 600px;
+}
+
+.big-text-img img {
+    width: 400px;
+    float: left;
+    padding-top: 50px;
+}
+
+.big-text-img p {
+    color: #111111;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 120px;
+}
+
+.underline {
+    position: relative;
+    display: inline-block;
+}
+
+.underline::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #A276FF;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.big--text h2 {
+    font-size: 56px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.big--text p {
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.big--text h3 {
+    font-size: 30px;
+}
+
+
+.social-buttons {
+    position: fixed;
+    right: 400px;
+    top: 0;    
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.social-buttons img {
+    width: 1vw;
+    height: 2vh;
+}
+
+.social-btn {
+    background-color: #A276FF;
+    text-decoration: none;
+    padding: 7px 25px;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.social-btn.twitter {
+    border-radius: 0px 0px 0px 10px;
+} 
+
+.social-btn.facebook {
+    border-radius: 0px 0px 10px 0px;
+}
+
+/* .btn a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 100px;
+    border: 1px solid;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    font-weight: 700;
+    font-size: 18px;
+} */
+ /* Медиа-запросы для адаптивности */
+@media (max-width: 1200px) {
+    .container_wrapper {
+        width: 25%; /* Ширина навигационной панели для средних экранов */
+    }
+
+    .maine_wrapper {
+        width: 75%; /* Ширина основной области для средних экранов */
+    }
+
+    .cont {
+        margin-left: 50px; /* Уменьшаем отступ для меньших экранов */
+    }
+
+    .img_c {
+        width: 20%; /* Увеличиваем размер изображений на средних экранах */
+        margin-right: 20px; /* Уменьшаем отступ между изображениями */
+    }
+
+    .maine_wrapper h1 {
+        font-size: 36px; /* Уменьшаем размер заголовка на средних экранах */
+        width: 90%; /* Увеличиваем ширину заголовка */
+    }
+
+    .maine_wrapper p {
+        font-size: 24px; /* Уменьшаем размер текста на средних экранах */
+        width: 90%; /* Увеличиваем ширину текста */
+    }
+}
+
+@media (max-width: 800px) {
+    .container_wrapper {
+        width: 100%; /* Ширина навигационной панели для мобильных экранов */
+        position: relative; /* Убираем фиксированное позиционирование */
+    }
+
+    .maine_wrapper {
+        width: 100%; /* Ширина основной области для мобильных экранов */
+        float: none; /* Убираем флоат */
+        margin-left: 0; /* Убираем отступ */
+        padding-top: 20px; /* Добавляем отступ сверху */
+    }
+
+    .wrapper_up, .wrapper_down {
+        flex-direction: column; /* Вертикальное расположение пунктов навигации */
+        align-items: center; /* Центрируем элементы */
+    }
+
+    .img_c {
+        width: 45%; /* Увеличиваем размер изображений на мобильных экранах */
+        margin: 0 10px; /* Убираем отступ между изображениями */
+        margin-top: 20px; /* Добавляем отступ сверху */
+    }
+
+    .social-buttons {
+        position: fixed; /* Фиксированное позиционирование */
+        right: 20px; /* Положение кнопок */
+        top: 20px; /* Положение кнопок */
+    }
+
+    .big--text {
+        width: 90%; /* Ширина блока с текстом */
+        float: none; /* Убираем флоат */
+        margin: 0 auto; /* Центрируем блок */
+    }
+
+    .big-text-img img {
+        width: 100%; /* Изображение занимает всю ширину */
+        float: none; /* Убираем флоат */
+    }
+}
